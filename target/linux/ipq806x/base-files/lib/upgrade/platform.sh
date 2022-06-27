@@ -68,6 +68,9 @@ platform_do_upgrade() {
 	ruijie,rg-mtfi-m520)
 		ruijie_do_upgrade "$1"
 		;;
+	xiaomi,r3d)
+		platform_do_upgrade_xiaomi "$1" 0x2800000
+		;;
 	zyxel,nbg6817)
 		zyxel_do_upgrade "$1"
 		;;
